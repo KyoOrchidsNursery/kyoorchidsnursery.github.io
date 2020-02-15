@@ -68,7 +68,6 @@ p {
 }
 
 a {
-    background-color: transparent;
     color: var(--color-dark);
     text-decoration: none;
 }
@@ -76,6 +75,8 @@ a {
 a:active,
 a:hover {
     outline-width: 0;
+    color: var(--color-dark-green);
+    text-decoration: underline;
 }
 
 img {
