@@ -8,6 +8,7 @@
     --color-light-green: #cad9bf;
     --color-green: #46563a;
     --color-dark-green: #2b2c26;
+    --color-green-gradient: linear-gradient(175deg, #F1F0EA 28%, #cad9bf 30%);;
     --light: 300;
     --regular: 400;
     --medium: 500;
@@ -137,5 +138,5 @@ section {
 }
 
 .contact {
-    background-color: var(--color-light-green);
+    background: var(--color-green-gradient);
 }
