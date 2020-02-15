@@ -42,11 +42,32 @@ img {
     height: auto;
 }
 
+/* Add a black background color to the top navigation */
+.nav {
+    background-color: var(--color-green);
+    overflow: hidden;
+    border-bottom: solid 1rem var(--color-dark-green);
+    position: fixed;
+    width:100%;
+    z-index: 500;
+}
+  
+  /* Style the links inside the navigation bar */
+.nav a {
+    float: left;
+    color: var(--color-white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
 .gallery {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem 2rem;
+    z-index: 10;
 }
 
 @media (max-width: 800px) {
