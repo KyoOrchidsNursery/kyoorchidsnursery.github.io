@@ -108,6 +108,10 @@ section {
     font-size: 17px;
 }
 
+.hero {
+    padding-top: 60px;
+}
+
 .gallery {
     display: grid;
     align-items: center;
