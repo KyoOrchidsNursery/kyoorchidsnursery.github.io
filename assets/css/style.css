@@ -27,6 +27,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -40,11 +41,11 @@ body {
 
 h1 {
     font-size: 4.8rem;
-    padding-top: 1em;
 }
 
 h2 {
     font-size: 3.6rem;
+    padding-top: 0.5em;
     padding-bottom: 1em;
 }
 
@@ -139,7 +140,6 @@ section {
     background-size: cover;
 }
 
-
 .wrapper {
     background-color: var(--color-primary);
     z-index: 100;
@@ -147,8 +147,8 @@ section {
     margin: 0 auto;
 }
 
-.wrapper:first-child {
-    border-top: solid 5px var()
+.title {
+    padding-top: 1em;
 }
 
 .gallery {
