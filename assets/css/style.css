@@ -8,7 +8,7 @@
     --color-light-green: #cad9bf;
     --color-green: #46563a;
     --color-dark-green: #2b2c26;
-    --color-green-gradient: linear-gradient(175deg, #F1F0EA 28%, #cad9bf 30%);;
+    --color-green-gradient: linear-gradient(175deg, #F1F0EA 22%, #cad9bf 28%);
     --light: 300;
     --regular: 400;
     --medium: 500;
@@ -40,22 +40,26 @@ body {
 
 h1 {
     font-size: 4.8rem;
-    @media (max-width: 600px) {
-        font-size: 3.2rem;
-    }
+    padding-top: 1em;
 }
 
 h2 {
     font-size: 3.6rem;
     padding-bottom: 1em;
-    @media (max-width: 600px) {
-        font-size: 2.6rem;
-    }
 }
 
 h3 {
     font-size: 2.8rem;
-    @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+    h3 {
         font-size: 2.2rem;
     }
 }
@@ -110,7 +114,7 @@ section {
 }
 
 .container {
-    height: 100vh;
+    height: 80vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -119,17 +123,32 @@ section {
 	max-width: 1024px;
 }
 
+@media (max-width: 800px) {
+    .container {
+        height: 50vh;
+    }
+}
+
 .hero {
     padding-top: 60px;
     position: fixed;
-    z-index: 10
+    z-index: 10;
 }
+
+.hero img {
+    background-size: cover;
+}
+
 
 .wrapper {
     background-color: var(--color-primary);
     z-index: 100;
     position: relative;
     margin: 0 auto;
+}
+
+.wrapper:first-child {
+    border-top: solid 5px var()
 }
 
 .gallery {
