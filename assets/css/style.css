@@ -131,13 +131,65 @@ section {
 }
 
 .hero {
-    padding-top: 60px;
-    position: fixed;
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    /* position: fixed; */
     z-index: 10;
 }
 
-.hero img {
+.slideshow li { 
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 10;
+    animation: hero 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) {
+    background-image: url('../orchid_christmas.jpg');
+}
+.slideshow li:nth-child(2)  {
+    background-image: url('../orchid_op.jpg');
+    animation-delay: 10s;
+}
+
+.slideshow li:nth-child(3) {
+    background-image: url('../orchid_cattleya.jpg');
+    animation-delay: 20s;
+}
+
+.slideshow li:nth-child(4) {
+    background-image: url('../orchid_pink.jpg');
+    animation-delay: 30s;
+}
+
+.slideshow li:nth-child(5) {
+    background-image: url('../orchid-purple.jpg');
+    animation-delay: 40s;
+}
+
+@keyframes hero { 
+    0% { 
+        opacity: 0; 
+        animation-timing-function: ease-in;
+    }
+    10% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    20% {
+        opacity: 1
+    }
+    30% {
+        opacity: 0
+    }
 }
 
 .wrapper {
