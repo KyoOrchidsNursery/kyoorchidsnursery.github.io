@@ -240,3 +240,7 @@ section {
 .contact {
     background: var(--color-green-gradient);
 }
+
+.contact .address {
+    padding: 1em 0;
+}
