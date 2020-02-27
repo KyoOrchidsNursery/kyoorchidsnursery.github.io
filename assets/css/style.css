@@ -114,6 +114,8 @@ section {
     font-size: 17px;
 }
 
+@media 
+
 .container {
     height: 80vh;
 	width: 100%;
@@ -220,6 +222,7 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 500px) {
     .gallery {
         grid-template-columns: 1fr;
@@ -241,5 +244,5 @@ section {
 }
 
 .contact .address {
-    padding: 1em 0;
+    padding: 2em 0;
 }
