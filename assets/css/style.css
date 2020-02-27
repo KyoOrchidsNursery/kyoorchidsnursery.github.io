@@ -114,6 +114,10 @@ section {
     font-size: 17px;
 }
 
+.text-logo {
+    width: 60px;
+}
+
 .container {
     height: 80vh;
 	width: 100%;
