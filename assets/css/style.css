@@ -114,8 +114,6 @@ section {
     font-size: 17px;
 }
 
-@media 
-
 .container {
     height: 80vh;
 	width: 100%;
@@ -133,8 +131,8 @@ section {
 }
 
 .hero {
-    height: 100%;
     width: 100vw;
+    height: 100%;
     position: fixed;
     z-index: 10;
 }
